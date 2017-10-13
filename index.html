@@ -38,6 +38,14 @@
         }
       }).addTo(map);
 	    
+      L.geoJson(rios, {
+        style: function (feature) {
+	  return {
+            color: '#000000',
+          };
+        }
+      }).addTo(map);	    
+	    
 	    
       function onEachFeature(feature, layer) {
 	var popupContent = "";
