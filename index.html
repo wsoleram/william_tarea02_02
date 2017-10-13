@@ -48,10 +48,10 @@
 	  popupContent +="<br>"+ feature.properties.verbatimLo;
 	}
 	 if (feature.properties && feature.properties.decimalLat) {
-	  popupContent +="latitud"+ feature.properties.decimalLat;
+	  popupContent +="<br> latitud"+ feature.properties.decimalLat;
 	}  
 	if (feature.properties && feature.properties.decimalLon) {
-	  popupContent +="longitud"+ feature.properties.decimalLon;
+	  popupContent +="<br> longitud"+ feature.properties.decimalLon;
 	}      
 	layer.bindPopup(popupContent);
       }	    
