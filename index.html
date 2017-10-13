@@ -42,19 +42,19 @@
 	var popupContent = "";
 
 	if (feature.properties && feature.properties.scientif_1) {
-	  popupContent += "Especie: " + feature.properties.scientif_1;
+	  popupContent += "<b>Especie:</b> " + feature.properties.scientif_1;
 	}
 
 	if (feature.properties && feature.properties.verbatimLo) {
-	  popupContent += "<br>Localidad: " + feature.properties.verbatimLo;
+	  popupContent += "<br><b>Localidad:</b> " + feature.properties.verbatimLo;
 	}	      
 	      
 	if (feature.properties && feature.properties.decimalLon) {
-	  popupContent += "<br>Longitud: " + feature.properties.decimalLon;
+	  popupContent += "<br><b>Longitud:</b> " + feature.properties.decimalLon;
 	}	     
 	      
 	if (feature.properties && feature.properties.decimalLat) {
-	  popupContent += ", Latitud: " + feature.properties.decimalLat;
+	  popupContent += "<b>, Latitud:</b> " + feature.properties.decimalLat;
 	}		      
 	      
 	      
