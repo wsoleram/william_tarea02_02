@@ -31,7 +31,7 @@
         style: function (feature) {
 	  return {
             fillColor: '#0000ff', 
-            color: '#ffffff'
+            color: '#000000'
           };
         }
       }).addTo(map);
@@ -43,7 +43,9 @@
 	if (feature.properties && feature.properties.scientif_1) {
 	  popupContent += feature.properties.scientif_1;
 	}
-
+       if (feature.properties && feature.properties.verbatimLo) {
+	  popupContent += feature.properties.verbatimLo;
+	}
 	layer.bindPopup(popupContent);
       }	    
 	    
@@ -51,7 +53,7 @@
       L.geoJson(regpresencia, {
         style: function (feature) {
 	  return {
-            fillColor: '#0000ff', 
+            fillColor: '#ff0000', 
             color: '#000000'
           };
         },
