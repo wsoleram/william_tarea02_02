@@ -47,11 +47,11 @@
        if (feature.properties && feature.properties.verbatimLo) {
 	  popupContent +="<br>"+ feature.properties.verbatimLo;
 	}
-	 if (feature.properties && feature.properties.DecimalLat) {
-	  popupContent +="<br>"+ feature.properties.DecimalLat;
+	 if (feature.properties && feature.properties.decimalLat) {
+	  popupContent +="latitud"+ feature.properties.decimalLat;
 	}  
-	if (feature.properties && feature.properties.DecimalLon) {
-	  popupContent +="<br>"+ feature.properties.DecimalLon;
+	if (feature.properties && feature.properties.decimalLon) {
+	  popupContent +="longitud"+ feature.properties.decimalLon;
 	}      
 	layer.bindPopup(popupContent);
       }	    
