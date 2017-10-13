@@ -42,11 +42,11 @@
 	var popupContent = "";
 
 	if (feature.properties && feature.properties.scientif_1) {
-	  popupContent += feature.properties.scientif_1 + "\n";
+	  popupContent += feature.properties.scientif_1 + "<br>";
 	}
 
 	if (feature.properties && feature.properties.verbatimLo) {
-	  popupContent += "\n" + feature.properties.verbatimLo;
+	  popupContent += "<br>" + feature.properties.verbatimLo;
 	}	      
 	      
 	layer.bindPopup(popupContent);
