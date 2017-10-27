@@ -61,7 +61,7 @@
         }
       }).addTo(map);
 	    
-      L.geoJson(cantones, {
+      cantonescr = L.geoJson(cantones, {
         style: function (feature) {
 	  return {
           color: '#0000ff',
@@ -119,7 +119,7 @@
        };
 	    
        var overlays = {
-       "Cantones del Pais": cantones      
+       "Cantones del Pais": cantonescr      
       };
 	       
 	    
