@@ -11,11 +11,11 @@
     <!-- Referencia al código fuente y a los estilos de Leaflet -->
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
- <!-- Referencia al código fuente y a los estilos del complemento MousePosition -->	 
+ 
+    <!-- Referencia al código fuente y a los estilos del complemento MousePosition -->	 
     <script type="text/javascript" src="https://cdn.rawgit.com/ardhi/Leaflet.MousePosition/master/src/L.Control.MousePosition.js"></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/ardhi/Leaflet.MousePosition/master/src/L.Control.MousePosition.css"/>	
 
-	
     </head>
     <body>
     <h1>Riqueza de especies de aves acuáticas residentes en los sitios Ramsar de Costa Rica</h1>
@@ -107,7 +107,7 @@
        "Cantones del Pais": cantonescr      
       };
       L.control.layers(baseLayers, overlays).addTo(map);	       
-      L.control.mousePosition().addTo(mapa);
+      L.control.mousePosition().addTo(map);
     
     </script>
   </body>
