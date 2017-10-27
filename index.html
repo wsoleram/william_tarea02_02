@@ -19,8 +19,6 @@
 
     <script src="js/riqespecies_avesacures-cr_ramsar-2017-wgs84.js" type="text/javascript"></script>
     <script src="js/regPresGBIFAvesAcuRes-cr_ramsar-2017-wgs84.js"  type="text/javascript"></script>
-    <script src="js/rios200000wgs84.js"  type="text/javascript"></script>
-    <script src="js/prediomedid.js"  type="text/javascript"></script>
     <script src="js/cantoneswgs84.js" type="text/javascript"></script>
      
 	  
@@ -43,24 +41,7 @@
         }
       }).addTo(map);
 	    
-	 L.geoJson(rios, {
-        style: function (feature) {
-	  return {
-          color: '#0000ff',
-          weight:0.5		  
-          };
-        }
-      }).addTo(map);
-	    
-       L.geoJson(prediomedid, {
-        style: function (feature) {
-	  return {
-          color: '#0000ff',
-          weight:0.5		  
-          };
-        }
-      }).addTo(map);
-	    
+	     	    
       cantonescr = L.geoJson(cantones, {
         style: function (feature) {
 	  return {
