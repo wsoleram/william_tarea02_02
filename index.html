@@ -39,7 +39,7 @@
     osm.addTo(map);
 
     	    
-      cantonescr = L.geoJson(cantones, {
+     var cantonescr = L.geoJson(cantones, {
         style: function (feature) {
 	  return {
           color: '#0000ff',
@@ -47,9 +47,9 @@
           };
         }
       }).addTo(map);	    
-     	    
-	
-      cantonescr.addTo(map);    
+         
+      cantonescr.addTo(map);
+	    
        var baseLayers = {
        "OpenStreetMap":osm,
        "mapbox":mbox 
