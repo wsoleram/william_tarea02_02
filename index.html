@@ -40,17 +40,7 @@
 	    
     osm.addTo(map);
 
-    L.geoJson(riqespecies, {
-        style: function (feature) {
-	  return {
-            fillColor: '#0000ff', 
-            color: '#000000',
-            fillOpacity: 0.9  
-          };
-        }
-      }).addTo(map);
-	    
-	     	    
+    	    
       cantonescr = L.geoJson(cantones, {
         style: function (feature) {
 	  return {
@@ -60,8 +50,7 @@
         }
       }).addTo(map);	    
      	    
-	    
-	    
+		    
 	    
       function onEachFeature(feature, layer) {
 	var popupContent = "";
@@ -81,8 +70,7 @@
 	layer.bindPopup(popupContent);
       }	    
 	    
-	    
-         
+	         
 	
 	      
 	onEachFeature: onEachFeature
